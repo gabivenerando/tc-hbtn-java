@@ -41,10 +41,10 @@ public class Blog {
     }
 
     public Set<Post> obterPostsPorAutor(Autor autor){
-        Set<Post> post = new HashSet<Post>();
+        Set<Post> post = new TreeSet<>();
         for (Post item : newPost){
 
-            if(item.getAutor().compareTo(autor) == 0){
+            if(item.getAutor().equals(autor)){
                 post.add(item);
             }
         }
