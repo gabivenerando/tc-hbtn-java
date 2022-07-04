@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Celular {
-    private ArrayList<Contato> contato = new ArrayList<Contato>();
+    private List<Contato> contato = new ArrayList<Contato>();
 
 
     public int obterPosicaoContato(String nome){
