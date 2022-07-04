@@ -8,16 +8,16 @@ public class Celular {
 
         int verificacao = 0;
 
-        if(contato.size() == 0){
+        if(contatos.size() == 0){
             return  verificacao = -1;
         }
 
 
 
-        for(Contato nomes : contato){
+        for(Contato nomes : contatos){
             if(nomes.getNome().equals(nome)){
 
-               return verificacao = nomes.getNome().indexOf(nome) ;
+                return verificacao = nomes.getNome().indexOf(nome) ;
             }else{
                 verificacao = -1;
             }
@@ -28,12 +28,12 @@ public class Celular {
         return verificacao;
     }
 
-    public void adicionarContato(Contato contato) throws Exception{
+    public void adicionarContato(Contato contatos) throws Exception{
 
-        int verificacao = obterPosicaoContato(contato.getNome());
+        int verificacao = obterPosicaoContato(contatos.getNome());
 
         if(verificacao == -1 || verificacao == 0){
-            this.contato.add(contato);
+            this.contatos.add(contatos);
         }else{
             throw new Exception("Nao foi possivel adicionar contato. Contato jah existente com esse nome");
         }
@@ -52,29 +52,29 @@ public class Celular {
 
 
         if(verificacaoContatoAntigo != -1 && verificacaoNovoContato != -1 && contatoAntigo.getNumero() != novoContato.getNumero() && contatoAntigo.getNome() == novoContato.getNome()) {
-               this.contato.remove(contatoAntigo);
-               this.contato.add(novoContato);
+            this.contatos.remove(contatoAntigo);
+            this.contatos.add(novoContato);
 
         }else{
             throw new Exception("Nao foi possivel modificar contato. Contato jah existente com esse nome");
         }
     }
 
-    public void removerContato(Contato contato) throws Exception {
-            int verficacao = obterPosicaoContato(contato.getNome());
+    public void removerContato(Contato contatos) throws Exception {
+        int verficacao = obterPosicaoContato(contatos.getNome());
 
-            if(verficacao != -1){
-                this.contato.remove(contato);
-            }else{
-                throw new Exception("Nao foi possivel remover contato. Contato nao existe");
-            }
+        if(verficacao != -1){
+            this.contatos.remove(contatos);
+        }else{
+            throw new Exception("Nao foi possivel remover contato. Contato nao existe");
+        }
     }
 
     public void listarContatos(){
 
-        Collections.sort(contato);
+        Collections.sort(contatos);
 
-        for(Contato nomes : contato){
+        for(Contato nomes : contatos){
             System.out.println(nomes);
         }
 
