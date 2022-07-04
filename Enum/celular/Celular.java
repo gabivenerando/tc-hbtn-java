@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Celular {
-    private ArrayList<Contato> contato = new ArrayList<Contato>();
+    private ArrayList<Contato> contatos = new ArrayList<>();
 
 
     public int obterPosicaoContato(String nome){
@@ -18,7 +18,7 @@ public class Celular {
             if(nomes.getNome().equals(nome)){
 
                return verificacao = nomes.getNome().indexOf(nome) ;
-            }else{adicionarTransacaoCliente
+            }else{
                 verificacao = -1;
             }
         }
