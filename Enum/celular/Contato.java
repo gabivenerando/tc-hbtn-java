@@ -30,8 +30,8 @@ public class Contato implements Comparable<Contato>{
         if (!(obj instanceof Contato)) {
             return false;
         }
-        Contato contato = (Contato) obj;
-        return (this.nome == contato.getNome());
+        Contato contatos = (Contato) obj;
+        return (this.nome == contatos.getNome());
 
     }
 
