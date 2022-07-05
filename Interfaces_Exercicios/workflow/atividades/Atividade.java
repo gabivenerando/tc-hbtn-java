@@ -1,4 +1,4 @@
-package workflowFixacao.atividades;
+package atividades;
 
 public interface Atividade {
     void executar();
