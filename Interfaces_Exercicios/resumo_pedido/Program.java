@@ -1,9 +1,12 @@
 import provedores.JadLog;
 import provedores.Loggi;
 import provedores.Sedex;
+import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
+        
         Pedido pedido1 = new Pedido(1, 1500, 234.90);
         Pedido pedido2 = new Pedido(2, 600, 124.00);
         Pedido pedido3 = new Pedido(3, 3000, 53.00);
