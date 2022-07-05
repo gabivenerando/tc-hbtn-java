@@ -1,6 +1,6 @@
-package workflowFixacao;
 
-import workflowFixacao.atividades.Atividade;
+
+import atividades.Atividade;
 
 import java.util.ArrayList;
 
