@@ -1,4 +1,4 @@
-package workflowFixacao.atividades;
+package atividades;
 
 public class CarregarVideo implements Atividade{
     @Override
