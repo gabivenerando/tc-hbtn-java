@@ -1,8 +1,8 @@
-package resumoPedido;
 
-import resumoPedido.provedores.JadLog;
-import resumoPedido.provedores.Loggi;
-import resumoPedido.provedores.Sedex;
+
+import provedores.JadLog;
+import provedores.Loggi;
+import provedores.Sedex;
 
 public class Program {
     public static void main(String[] args) {
