@@ -1,4 +1,4 @@
-package resumoPedido.provedores;
+package provedores;
 
 public class Sedex implements ProvedorFrete {
     @Override
