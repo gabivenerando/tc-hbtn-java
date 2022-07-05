@@ -1,6 +1,6 @@
-package workflowFixacao;
 
-import workflowFixacao.atividades.Atividade;
+
+import atividades.Atividade;
 public class MaquinaWorkflow {
 
 
