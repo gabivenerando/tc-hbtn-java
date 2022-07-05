@@ -1,9 +1,9 @@
-package workflowFixacao;
 
-import workflowFixacao.atividades.CarregarVideo;
-import workflowFixacao.atividades.CodificarVideo;
-import workflowFixacao.atividades.EnviarEmail;
-import workflowFixacao.atividades.ModificarStatusVideo;
+
+import atividades.CarregarVideo;
+import atividades.CodificarVideo;
+import atividades.EnviarEmail;
+import atividades.ModificarStatusVideo;
 
 import java.util.Locale;
 
