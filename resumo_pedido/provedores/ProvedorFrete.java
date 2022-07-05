@@ -1,4 +1,4 @@
-package resumoPedido.provedores;
+package provedores;
 
 public interface ProvedorFrete {
     Frete calcularFrete(double peso, double valor);
