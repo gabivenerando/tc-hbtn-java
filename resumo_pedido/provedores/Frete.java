@@ -1,6 +1,6 @@
-package resumoPedido.provedores;
 
-import resumoPedido.provedores.TipoProvedorFrete;
+
+import provedores.TipoProvedorFrete;
 
 public class Frete {
     private double valor;
