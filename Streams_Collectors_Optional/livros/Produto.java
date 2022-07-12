@@ -29,6 +29,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %.2f ", this.getCodigo(), this.getNome(), this.getCategoriaProduto(), this.getPreco());
+        return String.format("[%d] %s %s R$ %.2f ", this.getCodigo(), this.getNome(), this.getCategoriaProduto(), this.getPreco());
     }
 }
