@@ -15,14 +15,14 @@ public class Program {
         Pessoa pessoa10 = new Pessoa(10, "Branden Irwin", "Analista QA", 21, 2800);
 
         List<Pessoa> todasPessoas = List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa5,
-                pessoa6, pessoa7, pessoa8, pessoa9, pessoa10);
+            pessoa6, pessoa7, pessoa8, pessoa9, pessoa10);
 
-        Map<String, Long> pessoas1 = ConsultaPessoas.obterContagemPessoasPorCargo(todasPessoas);
-        Map<String, Long> pessoas2 = ConsultaPessoas.obterContagemPessoasPorCargo(
-                List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa9, pessoa10)
+        Map<String, Double> pessoas1 = ConsultaPessoas.obterMediaSalarioPorCargo(todasPessoas);
+        Map<String, Double> pessoas2 = ConsultaPessoas.obterMediaSalarioPorCargo(
+            List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa9, pessoa10)
         );
-        Map<String, Long> pessoas3 = ConsultaPessoas.obterContagemPessoasPorCargo(
-                List.of(pessoa1, pessoa3, pessoa4, pessoa5, pessoa9)
+        Map<String, Double> pessoas3 = ConsultaPessoas.obterMediaSalarioPorCargo(
+            List.of(pessoa1, pessoa3, pessoa4, pessoa5, pessoa9)
         );
 
         System.out.println(pessoas1);
