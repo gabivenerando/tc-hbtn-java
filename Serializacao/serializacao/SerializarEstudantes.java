@@ -22,7 +22,9 @@ public class SerializarEstudantes<Estudante> {
             ioe.printStackTrace();
         }
     }
-
+    
+    
+    @SuppressWarnings("unchecked")
     public List<Estudante> desserializar() {
         try
         {
